@@ -9,7 +9,7 @@ function App() {
 
     const getMessage = useCallback(() => {
 
-        fetch('http://' + window.location.hostname + ':3010/get?last=' + data.id, { method: 'POST', mode: 'cors' })
+        fetch(process.env.REACT_APP_URL_SERVER + '/get?last=' + data.id, { method: 'POST', mode: 'cors' })
             .then(res => res.json())
             .then(res => {
                 setTimeout(() => myRef.current.click(), 4000)
