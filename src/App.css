@@ -1,0 +1,44 @@
+.App {
+  width: 500px;
+  height: 90vh;
+  background-color: #D3D3D3;
+  border-radius: 8px;
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#afficheur {
+  overflow-y: scroll;
+  height: 80%;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0px;
+}
+
+.message_item {
+  display: block;
+  padding: 10px;
+  margin: 10px 10px;
+  background-color: white;
+  border-radius: 0 8px 8px 8px;
+  width: fit-content;
+}
+
+input {
+  width: 80%;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid rgb(162, 161, 161);
+}
+
+button {
+  padding: 10px;
+}
