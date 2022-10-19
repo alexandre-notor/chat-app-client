@@ -21,7 +21,7 @@ function App() {
     }, [data])
 
     const sendMessage = (data) => {
-        fetch('http://' + window.location.hostname + ':3010/put', {
+        fetch(process.env.REACT_APP_URL_SERVER + '/put', {
             method: 'PUT',
             mode: 'cors',
             body: new URLSearchParams({ message: data })
