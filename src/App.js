@@ -29,8 +29,8 @@ function App() {
     }
 
     useEffect(() => {
-        getMessage();
-    }, []);
+        myRef.current.click();
+    }, [myRef]);
 
     return (
         <div className="App">
